@@ -28,4 +28,4 @@ const getStringToNmber = (string) => {
 
 isLengthString ('Hello', 10);
 validationPolydrome('топот');
-console.log(getStringToNmber('агент 007'));
+getStringToNmber('агент 007');
