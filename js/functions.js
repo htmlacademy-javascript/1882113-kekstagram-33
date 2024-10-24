@@ -1,4 +1,4 @@
-const getLengthString = (string, length) => string.length <= length;
+const isLengthString = (string, length) => string.length <= length;
 //==
 const validationPolydrome = (string) => {
   let result = '';
@@ -11,7 +11,7 @@ const validationPolydrome = (string) => {
 // ==
 const getStringToNmber = (string) => {
   let result = '';
-  if(typeof(string) === 'number') {
+  if(typeof string === 'number') {
     string = string.toString();
   }
   string = string.toLowerCase().replaceAll (' ', '');
@@ -26,6 +26,6 @@ const getStringToNmber = (string) => {
 };
 
 
-getLengthString ('Hello', 10);
+isLengthString ('Hello', 10);
 validationPolydrome('топот');
-getStringToNmber(-33);
+console.log(getStringToNmber('агент 007'));
