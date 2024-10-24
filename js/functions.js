@@ -13,13 +13,6 @@ const getStringToNmber = (string) => {
   let result = '';
   if(typeof(string) === 'number') {
     string = string.toString();
-    for(let i = 0; i < string.length; i++) {
-      if(Number.isNaN(parseInt(string[i], 10))){
-        continue;
-      }
-      result += parseInt(string[i], 10);
-    }
-    return parseInt(result, 10);
   }
   string = string.toLowerCase().replaceAll (' ', '');
   for(let i = 0; i < string.length; i++) {
@@ -32,7 +25,7 @@ const getStringToNmber = (string) => {
 
 };
 
-// getStringToNmber работает только с аргументом типа: строка
+
 getLengthString ('Hello', 10);
 validationPolydrome('топот');
-getStringToNmber('2023 год');
+getStringToNmber(-33);
