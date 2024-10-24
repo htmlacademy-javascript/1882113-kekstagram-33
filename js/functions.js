@@ -22,3 +22,6 @@ const getStringToNmber = (string) => {
 };
 
 // getStringToNmber работает только с аргументом типа: строка
+getLengthString ('Hello', 10);
+validationPolydrome('топот');
+getStringToNmber('2023 год');
